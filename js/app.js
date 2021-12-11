@@ -4,7 +4,7 @@
 
 let name = prompt("Hi there, welcome to my quiz about me. What's your name?");
 
-let wrestling = prompt("Thanks for visiting " + name + "! Your first question is: Was I the only girl on the Franklin middle school wrestling team in the 7th grade? Answer with a yes or a no.");
+let wrestling = prompt("Thanks for visiting my site " + name + "! Your first question is: Was I the only girl on the Franklin middle school wrestling team in the 7th grade? Answer with a yes or a no.");
 wrestling = wrestling.toUpperCase();
 if (wrestling === 'N'|| wrestling === 'NO') {
   alert("That's right. There were two of us.");
@@ -28,16 +28,16 @@ if (toto === 'N' || toto === 'NO'){
   alert("That\'s right! His name is actually Toto.");
 }
 else {
-  alert ("That\'s wrong. His name is actually Toto");
+  alert ("That\'s wrong. His name is actually Toto.");
 }
 
 let language = prompt("I speak two languages fluently. Is this true? Answer with a yes or a no.");
 language = language.toUpperCase();
 if (language === 'N' || toto === 'NO'){
-  alert("Right. I cannot speak another language");
+  alert("Right. I cannot speak any languages besides English.");
 }
 else {
-  alert ("That\'s wrong. I cannot speak another language besdies English.");
+  alert ("That\'s wrong. I cannot speak any other languages besdies English.");
 }
 
 let job = prompt("I've been working the same job for the past two years. Is this true? Answer with a yes or a no.");
