@@ -2,7 +2,7 @@
 
 //console.log('proof of life');
 
-let name = promt("Hi there, welcome to my quiz about me. What's your name?");
+let name = prompt("Hi there, welcome to my quiz about me. What's your name?");
 
 let wrestling = prompt("Thanks for visiting " + name + "! Your first question is: Was I the only girl on the Franklin middle school wrestling team in the 7th grade? Answer with a yes or a no.");
 wrestling = wrestling.toUpperCase();
