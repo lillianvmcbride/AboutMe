@@ -2,10 +2,11 @@
 
 //console.log('proof of life');
 score = 0;
+questions: ["Thanks for visiting my site " + name + "! Your first question is: Was I the only girl on the Franklin middle school wrestling team in the 7th grade? Answer with a yes or a no.", "Next question: Do I currently have only one pet? Answer with a yes or a no.", "My dog's name is Tito, is that right? Answer with a yes or a no.", "I speak two languages fluently. Is this true? Answer with a yes or a no.", "I've been working the same job for the past two years. Is this true? Answer with a yes or a no."];
 
 let name = prompt("Hi there, welcome to my quiz about me. What's your name?");
 
-let wrestling = prompt("Thanks for visiting my site " + name + "! Your first question is: Was I the only girl on the Franklin middle school wrestling team in the 7th grade? Answer with a yes or a no.");
+let wrestling = prompt(questions[0]);
 wrestling = wrestling.toUpperCase();
 if (wrestling === 'N'|| wrestling === 'NO') {
   alert("That's right. There were two of us.");
@@ -15,7 +16,7 @@ else {
   alert("That is incorrect. There were two of us.");
 }
 
-let pets = prompt("Next question: Do I currently have only one pet? Answer with a yes or a no.");
+let pets = prompt(questions[1]);
 pets = pets.toUpperCase();
 if (pets === 'Y' || pets === 'YES'){
   alert("Correct! I have an approximately nine year old pit bull and that's it.");
@@ -25,7 +26,7 @@ else {
   alert("You're wrong, I just have the one dog.");
 }
 
-let toto = prompt("My dog's name is Tito, is that right? Answer with a yes or a no.")
+let toto = prompt(questions[2])
 toto = toto.toUpperCase();
 if (toto === 'N' || toto === 'NO'){
   alert("That\'s right! His name is actually Toto.");
@@ -35,7 +36,7 @@ else {
   alert ("That\'s wrong. His name is actually Toto.");
 }
 
-let language = prompt("I speak two languages fluently. Is this true? Answer with a yes or a no.");
+let language = prompt(questions[3]);
 language = language.toUpperCase();
 if (language === 'N' || toto === 'NO'){
   alert("Right. I cannot speak any languages besides English.");
@@ -45,7 +46,7 @@ else {
   alert ("That\'s wrong. I cannot speak any other languages besdies English.");
 }
 
-let job = prompt("I've been working the same job for the past two years. Is this true? Answer with a yes or a no.");
+let job = prompt(questions[4]);
 job = job.toUpperCase();
 if (language === 'N' || toto === 'NO'){
   alert("That\'s correct, I've actually had several. Thanks for taking my quiz " + name + ". I hope you had fun!");
