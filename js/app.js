@@ -1,3 +1,4 @@
+
 'use strict'
 
 //console.log('proof of life');
@@ -106,5 +107,3 @@ var number = prompt('Can you guess a number between 1 and 10');
       alert('The correct answers were: green, taupe, pink, and orange!');
   alert('Your final score on this quiz was ' + score + '/7!');
  
-
-
