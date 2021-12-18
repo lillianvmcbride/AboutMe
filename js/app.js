@@ -1,60 +1,80 @@
 
-'use strict'
+'use strict';
 
 //console.log('proof of life');
-score = 0;
-questions: ["Thanks for visiting my site " + name + "! Your first question is: Was I the only girl on the Franklin middle school wrestling team in the 7th grade? Answer with a yes or a no.", "Next question: Do I currently have only one pet? Answer with a yes or a no.", "My dog's name is Tito, is that right? Answer with a yes or a no.", "I speak two languages fluently. Is this true? Answer with a yes or a no.", "I've been working the same job for the past two years. Is this true? Answer with a yes or a no."];
+let score = 0;
 
 let name = prompt("Hi there, welcome to my quiz about me. What's your name?");
+let questions = ["Thanks for visiting my site " + name + "! Your first question is: Was I the only girl on the Franklin middle school wrestling team in the 7th grade? Answer with a yes or a no.", "Next question: Do I currently have only one pet? Answer with a yes or a no.", "My dog's name is Tito, is that right? Answer with a yes or a no.", "I speak two languages fluently. Is this true? Answer with a yes or a no.", "I've been working the same job for the past two years. Is this true? Answer with a yes or a no."];
 
-let wrestling = prompt(questions[0]);
-wrestling = wrestling.toUpperCase();
-if (wrestling === 'N'|| wrestling === 'NO') {
-  alert("That's right. There were two of us.");
-  score++;
-}
-else {
-  alert("That is incorrect. There were two of us.");
-}
-
-let pets = prompt(questions[1]);
-pets = pets.toUpperCase();
-if (pets === 'Y' || pets === 'YES'){
-  alert("Correct! I have an approximately nine year old pit bull and that's it.");
-  score++;
-}
-else {
-  alert("You're wrong, I just have the one dog.");
+function aboutMe() {
+question1();
+question2();
+question3();
+question4();
+question5();
 }
 
-let toto = prompt(questions[2])
-toto = toto.toUpperCase();
-if (toto === 'N' || toto === 'NO'){
-  alert("That\'s right! His name is actually Toto.");
-  score++;
+aboutMe();
+
+function question1 () {
+  let wrestling = prompt(questions[0]);
+  wrestling = wrestling.toUpperCase();
+  if (wrestling === 'N'|| wrestling === 'NO') {
+    alert("That's right. There were two of us.");
+    score++;
+  }
+  else {
+    alert("That is incorrect. There were two of us.");
+  }
 }
+
+function question2() {
+  let pets = prompt(questions[1]);
+  pets = pets.toUpperCase();
+  if (pets === 'Y' || pets === 'YES'){
+    alert("Correct! I have an approximately nine year old pit bull and that's it.");
+    score++;
+  }
+  else {
+    alert("You're wrong, I just have the one dog.");
+  }
+}
+
+function question3() {
+  let toto = prompt(questions[2])
+  toto = toto.toUpperCase();
+  if (toto === 'N' || toto === 'NO'){
+    alert("That\'s right! His name is actually Toto.");
+    score++;
+  }
 else {
   alert ("That\'s wrong. His name is actually Toto.");
+  }
 }
 
-let language = prompt(questions[3]);
-language = language.toUpperCase();
-if (language === 'N' || toto === 'NO'){
-  alert("Right. I cannot speak any languages besides English.");
-  score++;
-}
-else {
-  alert ("That\'s wrong. I cannot speak any other languages besdies English.");
+function question4() {
+  let language = prompt(questions[3]);
+  language = language.toUpperCase();
+  if (language === 'N' || toto === 'NO'){
+    alert("Right. I cannot speak any languages besides English.");
+    score++;
+  }
+  else {
+    alert ("That\'s wrong. I cannot speak any other languages besdies English.");
+  }
 }
 
-let job = prompt(questions[4]);
-job = job.toUpperCase();
-if (language === 'N' || toto === 'NO'){
-  alert("That\'s correct, I've actually had several. Thanks for taking my quiz " + name + ". I hope you had fun!");
-  score++;
-}
-else {
-  alert ("That\'s wrong, I've actually had several.");
+function question5() {
+  let job = prompt(questions[4]);
+  job = job.toUpperCase();
+  if (language === 'N' || toto === 'NO'){
+    alert("That\'s correct, I've actually had several. Thanks for taking my quiz " + name + ". I hope you had fun!");
+    score++;
+  }
+  else {
+    alert ("That\'s wrong, I've actually had several.");
+  }
 }
 
 var randomNumber = (Math.floor(Math.random()*10)) + 1;
@@ -106,4 +126,4 @@ var number = prompt('Can you guess a number between 1 and 10');
       }
       alert('The correct answers were: green, taupe, pink, and orange!');
   alert('Your final score on this quiz was ' + score + '/7!');
- 
+
